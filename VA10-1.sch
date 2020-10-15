@@ -1,0 +1,337 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:CP1_Small C3
+U 1 1 5F85C4CA
+P 3250 2900
+F 0 "C3" V 3000 2850 50  0000 L CNN
+F 1 "470u" V 3100 2800 50  0000 L CNN
+F 2 "" H 3250 2900 50  0001 C CNN
+F 3 "~" H 3250 2900 50  0001 C CNN
+	1    3250 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5F85DB66
+P 2250 2700
+F 0 "R3" H 2320 2746 50  0000 L CNN
+F 1 "330" H 2320 2655 50  0000 L CNN
+F 2 "" V 2180 2700 50  0001 C CNN
+F 3 "~" H 2250 2700 50  0001 C CNN
+	1    2250 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5F85DFBE
+P 2900 2650
+F 0 "R4" H 2970 2696 50  0000 L CNN
+F 1 "1k" H 2970 2605 50  0000 L CNN
+F 2 "" V 2830 2650 50  0001 C CNN
+F 3 "~" H 2900 2650 50  0001 C CNN
+	1    2900 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_POT P1
+U 1 1 5F85E4FC
+P 2900 3200
+F 0 "P1" H 2831 3246 50  0000 R CNN
+F 1 "470" H 2831 3155 50  0000 R CNN
+F 2 "" H 2900 3200 50  0001 C CNN
+F 3 "~" H 2900 3200 50  0001 C CNN
+	1    2900 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BC327 T3
+U 1 1 5F85E9BA
+P 2350 3200
+F 0 "T3" H 2541 3246 50  0000 L CNN
+F 1 "BC327" H 2541 3155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2550 3125 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/BC327-D.PDF" H 2350 3200 50  0001 L CNN
+	1    2350 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BC337 T2
+U 1 1 5F85EF6A
+P 2250 3600
+F 0 "T2" V 2250 3750 50  0000 L CNN
+F 1 "BC337" V 2150 3700 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2450 3525 50  0001 L CIN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 2250 3600 50  0001 L CNN
+	1    2250 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:DIODE D1
+U 1 1 5F891A7D
+P 2700 2250
+F 0 "D1" H 2700 1985 50  0000 C CNN
+F 1 "DIODE" H 2700 2076 50  0000 C CNN
+F 2 "" H 2700 2250 50  0001 C CNN
+F 3 "~" H 2700 2250 50  0001 C CNN
+	1    2700 2250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2250 2850 2250 3000
+Wire Wire Line
+	2450 4250 2450 3700
+Wire Wire Line
+	2900 3450 2900 3350
+Wire Wire Line
+	2550 3200 2750 3200
+Wire Wire Line
+	2900 3750 2900 4500
+$Comp
+L Device:R R5
+U 1 1 5F85DDDD
+P 2900 3600
+F 0 "R5" H 2970 3646 50  0000 L CNN
+F 1 "2.2k" H 2970 3555 50  0000 L CNN
+F 2 "" V 2830 3600 50  0001 C CNN
+F 3 "~" H 2900 3600 50  0001 C CNN
+	1    2900 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 2900 2250
+Wire Wire Line
+	2900 2250 2900 2500
+$Comp
+L Device:R R2
+U 1 1 5F85CDAA
+P 2100 2300
+F 0 "R2" H 2170 2346 50  0000 L CNN
+F 1 "330k" H 2170 2255 50  0000 L CNN
+F 2 "" V 2030 2300 50  0001 C CNN
+F 3 "~" H 2100 2300 50  0001 C CNN
+	1    2100 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 2250 2250 2250
+Wire Wire Line
+	2250 2250 2250 2300
+Connection ~ 2250 2300
+Wire Wire Line
+	2250 2300 2250 2550
+Wire Wire Line
+	1750 2600 1750 4250
+Wire Wire Line
+	1750 4250 2450 4250
+Wire Wire Line
+	2900 1900 1550 1900
+Wire Wire Line
+	2900 1900 2900 2250
+Wire Wire Line
+	1950 1700 1950 2300
+Connection ~ 1950 2300
+Wire Wire Line
+	1550 2300 1550 1900
+$Comp
+L Device:D_Bridge_-AA+ PR1
+U 1 1 5F85BE13
+P 1150 1700
+F 0 "PR1" H 1250 1950 50  0000 L CNN
+F 1 "KBL06" H 1000 1300 50  0000 L CNN
+F 2 "" H 1150 1700 50  0001 C CNN
+F 3 "~" H 1150 1700 50  0001 C CNN
+	1    1150 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C1
+U 1 1 5F85C6D5
+P 1450 2550
+F 0 "C1" H 1250 2550 50  0000 L CNN
+F 1 "2200u" H 1300 2700 50  0000 L CNN
+F 2 "" H 1450 2550 50  0001 C CNN
+F 3 "~" H 1450 2550 50  0001 C CNN
+	1    1450 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP1_Small C2
+U 1 1 5F85C8F2
+P 1100 2550
+F 0 "C2" H 1200 2550 50  0000 L CNN
+F 1 "2200u" H 950 2700 50  0000 L CNN
+F 2 "" H 1100 2550 50  0001 C CNN
+F 3 "~" H 1100 2550 50  0001 C CNN
+	1    1100 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D_Zener DZ1
+U 1 1 5F86F70E
+P 1250 3000
+F 0 "DZ1" H 1250 2900 50  0000 C CNN
+F 1 "ZPD12" H 1250 3100 50  0000 C CNN
+F 2 "" H 1250 3000 50  0001 C CNN
+F 3 "~" H 1250 3000 50  0001 C CNN
+	1    1250 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5F85CFD6
+P 1250 3700
+F 0 "R1" V 1150 3650 50  0000 L CNN
+F 1 "220" V 1350 3650 50  0000 L CNN
+F 2 "" V 1180 3700 50  0001 C CNN
+F 3 "~" H 1250 3700 50  0001 C CNN
+	1    1250 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2900 4500 850  4500
+Wire Wire Line
+	1400 3700 2050 3700
+Wire Wire Line
+	1400 3000 2250 3000
+Connection ~ 2250 3000
+Wire Wire Line
+	1450 2450 1250 2450
+Wire Wire Line
+	1100 2650 1250 2650
+Wire Wire Line
+	1250 2650 1250 2750
+Wire Wire Line
+	1250 2750 1950 2750
+Wire Wire Line
+	1950 2750 1950 2300
+Connection ~ 1250 2650
+Wire Wire Line
+	1250 2650 1450 2650
+Wire Wire Line
+	1450 1700 1950 1700
+Wire Wire Line
+	850  1700 850  2350
+Wire Wire Line
+	1100 3700 850  3700
+Connection ~ 850  3700
+Wire Wire Line
+	850  3700 850  4500
+Wire Wire Line
+	1100 3000 850  3000
+Connection ~ 850  3000
+Wire Wire Line
+	850  3000 850  3700
+Wire Wire Line
+	1250 2450 1250 2350
+Wire Wire Line
+	1250 2350 850  2350
+Connection ~ 1250 2450
+Wire Wire Line
+	1250 2450 1100 2450
+Connection ~ 850  2350
+Wire Wire Line
+	850  2350 850  3000
+Entry Wire Line
+	3750 2250 3850 2350
+Entry Wire Line
+	3750 2300 3850 2400
+Entry Wire Line
+	3750 2350 3850 2450
+Entry Wire Line
+	3750 2400 3850 2500
+Entry Wire Line
+	3750 2450 3850 2550
+Entry Wire Line
+	3750 2500 3850 2600
+Entry Wire Line
+	3750 2650 3850 2750
+Entry Wire Line
+	3750 2700 3850 2800
+Entry Wire Line
+	3750 2750 3850 2850
+Entry Wire Line
+	3750 2800 3850 2900
+Entry Wire Line
+	3750 2850 3850 2950
+Entry Wire Line
+	3750 2900 3850 3000
+Entry Wire Line
+	3750 2950 3850 3050
+Entry Wire Line
+	3750 3000 3850 3100
+Entry Wire Line
+	3750 3050 3850 3150
+Wire Wire Line
+	3750 2250 3750 850 
+Wire Wire Line
+	850  850  850  1700
+Connection ~ 850  1700
+Wire Wire Line
+	1150 1400 1150 900 
+Wire Wire Line
+	1150 900  3700 900 
+Wire Wire Line
+	3700 900  3700 2300
+Wire Wire Line
+	3700 2300 3750 2300
+Wire Wire Line
+	1150 2000 1500 2000
+Wire Wire Line
+	1500 2000 1500 950 
+Wire Wire Line
+	1500 950  3650 950 
+Wire Wire Line
+	3650 950  3650 2350
+Wire Wire Line
+	3650 2350 3750 2350
+Wire Wire Line
+	3750 3050 3750 4500
+Connection ~ 2900 4500
+Wire Wire Line
+	3750 850  850  850 
+Wire Wire Line
+	3750 4500 2900 4500
+Wire Wire Line
+	2900 2800 2900 2900
+Wire Wire Line
+	3150 2900 2900 2900
+Connection ~ 2900 2900
+Wire Wire Line
+	2900 2900 2900 3050
+Wire Wire Line
+	3350 2900 3750 2900
+NoConn ~ 3750 2400
+NoConn ~ 3750 2450
+NoConn ~ 3750 2500
+NoConn ~ 3750 2650
+NoConn ~ 3750 2700
+NoConn ~ 3750 2750
+NoConn ~ 3750 2800
+NoConn ~ 3750 2850
+NoConn ~ 3750 2950
+NoConn ~ 3750 3000
+$Comp
+L Transistor_BJT:BD249A T1
+U 1 1 5F8CFB1C
+P 1750 2400
+F 0 "T1" V 2079 2400 50  0000 C CNN
+F 1 "BD534" V 1988 2400 50  0000 C CNN
+F 2 "" H 2000 2325 50  0001 L CIN
+F 3 "http://www.mospec.com.tw/pdf/power/BD249.pdf" H 1750 2400 50  0001 L CNN
+	1    1750 2400
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
